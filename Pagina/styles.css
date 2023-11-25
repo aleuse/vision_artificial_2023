@@ -1,0 +1,79 @@
+.resultado {
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.image-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.logo {
+    width: 10%;
+    -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; -khtml-border-radius: 20px; 
+}*/
+
+.navbar-brand img {
+    -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; -khtml-border-radius: 20px; 
+}
+
+#imgcafe {
+    -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; -khtml-border-radius: 50px;
+}
+
+body {
+    background: url('images/fondo.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}
+
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+#divroya {
+    max-width: 100%;
+    background: white;
+    -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; -khtml-border-radius: 20px; 
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 10px 10px rgba(0,0,0,0.6);;
+}
+
+#canvas {
+    box-shadow: 5px 15px 15px rgba(0,0,0,0.8);
+    -moz-box-shadow: 5px 15px 15px rgba(0,0,0,0.8);
+    -webkit-box-shadow: 5px 15px 15px rgba(0,0,0,0.8);
+    -moz-border-radius: 20px; -webkit-border-radius: 20px; border-radius: 20px; -khtml-border-radius: 20px; 
+}
+
+#cambiar-camara {
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+}
+
+#inputImage {
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0px 10px 10px rgba(0,0,0,0.6);
+}
+
+/*#page2 {
+    background: url('images/fondo cel.png') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+}*/
+
+
+
+
+/* CSS HEX 
+#225C1F
+--thatch-green: #39541e;
+--green-white: #e8e9df;
+--sushi: #8ca345;
+--tobacco-brown: #755e46;
+--battleship-gray: #8c9b7f;
+*/

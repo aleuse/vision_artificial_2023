@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detección de Roya</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="page2">
+    <header class="navbar navbar-expand-md navbar-dark px-5" style="background-color: rgba(0, 0, 0, 0);">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logon.png" width="277" class="d-inline-block align-top" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-success my-2 my-sm-0" href="#">Identifica</button>
+            </li>
+          </ul>
+        </div>
+    </header>
+    <!--<header>
+        <div class="container-flow px-4 py-2 my-2 text-center border-bottom">
+                <div class="row">
+                <a href="#" class="col-3">  
+                    <p class="">#Cafésinroya</p>
+                </a>            
+                <a href="#" class="col-1 offset-4">Inicio</a>
+                <a href="#" class="col-1 ">Productos</a>
+                <a href="#" class="col-1 ">Contacto</a>
+                <a href="#" class="col-1 ">Identifica</a>
+            </div>
+        </div>
+    </header>-->
+    <main>
+        <div class="container mt-0 mt-5">
+            <div class="row">
+                <div class="col-md-6 text-center" id="divcamara">
+                    <video id="video" playsinline autoplay style="width: 1px;"></video>          
+                    <canvas id="canvas" width="400" height="400" style="max-width: 100%; border: solid #1d5d20 5px;"></canvas>
+                    <canvas id="otrocanvas" width="150" height="150" style="display: none"></canvas>      
+                </div>
+                <div class="container text-center col-md-6 mt-5">
+                    <div class="row">
+                        <button class="btn btn-light mb-2 col-6 offset-3" id="cambiar-camara" onclick="cambiarCamara();" style="width: 50%; background: #a7c355;">Cambiar camara</button>
+                    </div>
+                    <div class="row">
+                        <div class="col-8 offset-2 mt-3" >
+                            <input class="btn btn-light mb-2" type="file" id="inputImage" accept="image/*" style="width: 80%; background: #a7c355;"> 
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="divroya" class="col-md-10 offset-1 text-center my-5" style="background: #a7c355;">
+                            <h2 class="display-3 fw-bold p-2" id="resultado2">Cargando...</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>           
+      </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
